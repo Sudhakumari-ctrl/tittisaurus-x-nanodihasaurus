@@ -65,6 +65,9 @@ button,input{font:inherit}button{cursor:pointer}
 .heart{position:fixed;pointer-events:none;z-index:99;font-size:25px;animation:heartup 1.3s ease-out forwards}@keyframes heartup{to{transform:translateY(-130px) scale(1.5) rotate(20deg);opacity:0}}
 .confetti{position:fixed;top:-25px;font-size:22px;z-index:101;animation:fall 2.5s linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
 .scan-complete{display:none;text-align:center;padding:18px;background:#fff0f7;border-radius:18px;margin-top:16px;color:#63305e}.scan-complete.show{display:block;animation:pop .5s}
+
+.bfday-badge{display:inline-block;margin:12px auto 18px;padding:10px 18px;border-radius:999px;background:linear-gradient(135deg,#fff0f6,#ffd9e9);border:1px solid #f2a9c6;color:#9f3f68;font-weight:800;box-shadow:0 8px 22px #c94f8122;animation:bfPulse 2s ease-in-out infinite;}
+@keyframes bfPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
 </style>
 </head>
 <body>
@@ -87,6 +90,7 @@ button,input{font:inherit}button{cursor:pointer}
   <div style="font-size:58px;animation:float 2.5s infinite">🦖💕🦖</div>
   <div class="kicker">A tiny internet love story</div>
   <h1>Tittisaurus<br>×<br>Nanodihasaurus</h1>
+   <div class="bfday-badge">💐 HAPPY BOYFRIEND'S DAY, NANODIHASAURUS! 🦖💕</div>
   <p class="sub">Somehow, two idiots met online and became each other's favourite person. 🎀</p>
   <button class="btn" onclick="go('password')">Enter our little universe →</button>
   <button class="secret" onclick="secretMessage()">pssst... don't click this 👀</button>
